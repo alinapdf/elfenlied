@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Elfen lied</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="nav-wrapper-left">
+            <a href="#" class="nav-wrapper-left-logo">
+              <img src="img/nav/logo.svg" alt="Elfen lied" />
+            </a>
+            <a href="#" class="nav-wrapper-left-catalog"> Каталог </a>
+          </div>
+          <div class="nav-wrapper-medium">
+            <a href="#" class="nav-wrapper-medium-link"> Блог </a>
+            <a href="#" class="nav-wrapper-medium-link"> Контакты </a>
+          </div>
+          <div class="nav-wrapper-right">
+            <a href="#" class="nav-wrapper-right-search"> Поиск </a>
+            <div class="nav-wrapper-right-wraper">
+              <button class="nav-wrapper-right-wraper-btn">
+                <img src="img/nav/избранное-icon.svg" alt="Избранное" />
+              </button>
+              <button class="nav-wrapper-right-wraper-btn">
+                <img src="img/nav/профиль-icon.svg" alt="Профиль" />
+              </button>
+              <button class="nav-wrapper-right-wraper-btn">
+                <img src="img/nav/корзина-icon.svg" alt="Корзина" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="container-hero">
+        <ul class="container-hero-goods">
+          <li class="container-hero-goods-item first">
+            <div class="container-hero-goods-item-img">
+              <img src="img/hero/лампа1.png" alt="Светильник" />
+            </div>
+            <p class="container-hero-goods-item-name">Светильник</p>
+            <p class="container-hero-goods-item-desc">
+              Функциональная дизайнерская лампа для создания максимально
+              комфортного освещения
+            </p>
+            <p class="container-hero-goods-item-price">
+              150 000 <span>₽</span>
+            </p>
+            <button class="container-hero-goods-item-btn">Купить</button>
+            <span class="container-hero-goods-item-tag"> товар дня </span>
+            <p class="container-hero-goods-item-inactive-slide">слайд</p>
+            <span class="container-hero-goods-item-inactive-number">01</span>
+          </li>
+          <li class="container-hero-goods-item second">
+            <div class="container-hero-goods-item-img">
+              <img src="img/hero/кресло1.png" alt="кресло" />
+            </div>
+
+            <p class="container-hero-goods-item-name">кресло</p>
+            <p class="container-hero-goods-item-desc">
+              Функциональная дизайнерское кресло для создания максимально уюта в
+              помещении
+            </p>
+            <p class="container-hero-goods-item-price">
+              120 000 <span>₽</span>
+            </p>
+            <button class="container-hero-goods-item-btn">Купить</button>
+            <span class="container-hero-goods-item-tag"> товар дня </span>
+            <p class="container-hero-goods-item-inactive-slide">слайд</p>
+            <span class="container-hero-goods-item-inactive-number">02</span>
+          </li>
+          <li class="container-hero-goods-item third">
+            <div class="container-hero-goods-item-img">
+              <img src="img/hero/стол1.png" alt="высокий стол" />
+            </div>
+            <p class="container-hero-goods-item-name">высокий стол</p>
+            <p class="container-hero-goods-item-desc">
+              Функциональная дизайнерская лампа для создания максимально
+              комфортного освещения
+            </p>
+            <p class="container-hero-goods-item-price">
+              235 000 <span>₽</span>
+            </p>
+            <button class="container-hero-goods-item-btn">Купить</button>
+            <span class="container-hero-goods-item-tag"> товар дня </span>
+            <p class="container-hero-goods-item-inactive-slide">слайд</p>
+            <span class="container-hero-goods-item-inactive-number">03</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="categories">
+      <div class="container">
+        <h2 class="categories-header">категории</h2>
+        <ul class="categories-list">
+          <li class="categories-list-item">
+            <p class="categories-list-item-name">напольные зеркала</p>
+            <div class="categories-list-item-img">
+              <img
+                src="img/categories/напольные-зеркала.png"
+                alt="Напольные зеркала"
+              />
+            </div>
+            <button class="categories-list-item-btn" data-category="mirrors">
+              <img
+                src="img/categories/кнопка.svg"
+                alt="Смотреть"
+                class="categories-list-item-btn-inactive"
+              />
+              <img
+                src="img/categories/кнопка-hover.svg"
+                alt="Смотреть"
+                class="categories-list-item-btn-active"
+              />
+            </button>
+            <div class="categories-list-item-quantity">4 <span>шт</span></div>
+            <div class="categories-list-item-container">
+              <svg width="250" height="150" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  id="curve"
+                  d="M -20,120 Q 140,40 250,120"
+                  fill="transparent"
+                  stroke="none"
+                />
+                <text>
+                  <textPath
+                    href="#curve"
+                    startOffset="50%"
+                    text-anchor="middle"
+                    class="categories-list-item-container-text"
+                  >
+                    ИЗГОТОВЛЕНИЕ НА ЗАКАЗ
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+          </li>
+          <li class="categories-list-item">
+            <p class="categories-list-item-name">торшеры и лампы</p>
+            <div class="categories-list-item-img">
+              <img
+                src="img/categories/торшеры и лампы.png"
+                alt="торшеры
+                и лампы"
+              />
+            </div>
+            <button class="categories-list-item-btn" data-category="lamps">
+              <img
+                src="img/categories/кнопка.svg"
+                alt="Смотреть"
+                class="categories-list-item-btn-inactive"
+              />
+              <img
+                src="img/categories/кнопка-hover.svg"
+                alt="Смотреть"
+                class="categories-list-item-btn-active"
+              />
+            </button>
+            <div class="categories-list-item-quantity">4 <span>шт</span></div>
+            <div class="categories-list-item-container">
+              <svg width="250" height="150" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  id="curve"
+                  d="M -20,120 Q 140,40 250,120"
+                  fill="transparent"
+                  stroke="none"
+                />
+                <text>
+                  <textPath
+                    href="#curve"
+                    startOffset="50%"
+                    text-anchor="middle"
+                    class="categories-list-item-container-text"
+                  >
+                    ИЗГОТОВЛЕНИЕ НА ЗАКАЗ
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+          </li>
+          <li class="categories-list-item">
+            <p class="categories-list-item-name">кресла и стулья</p>
+            <div class="categories-list-item-img">
+              <img
+                src="img/categories/кресла и стулья.png"
+                alt="кресла
+                и стулья"
+              />
+            </div>
+            <button class="categories-list-item-btn" data-category="chairs">
+              <img
+                src="img/categories/кнопка.svg"
+                alt="Смотреть"
+                class="categories-list-item-btn-inactive"
+              />
+              <img
+                src="img/categories/кнопка-hover.svg"
+                alt="Смотреть"
+                class="categories-list-item-btn-active"
+              />
+            </button>
+            <div class="categories-list-item-quantity">4 <span>шт</span></div>
+            <div class="categories-list-item-container">
+              <svg width="250" height="150" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  id="curve"
+                  d="M -20,120 Q 140,40 250,120"
+                  fill="transparent"
+                  stroke="none"
+                />
+                <text>
+                  <textPath
+                    href="#curve"
+                    startOffset="50%"
+                    text-anchor="middle"
+                    class="categories-list-item-container-text"
+                  >
+                    ИЗГОТОВЛЕНИЕ НА ЗАКАЗ
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+          </li>
+          <li class="categories-list-item">
+            <p class="categories-list-item-name">столы и тумбы</p>
+            <div class="categories-list-item-img">
+              <img
+                src="img/categories/столы и тумбы.png"
+                alt="столы
+                и тумбы"
+              />
+            </div>
+            <button class="categories-list-item-btn" data-category="tables">
+              <img
+                src="img/categories/кнопка.svg"
+                alt="Смотреть"
+                class="categories-list-item-btn-inactive"
+              />
+              <img
+                src="img/categories/кнопка-hover.svg"
+                alt="Смотреть"
+                class="categories-list-item-btn-active"
+              />
+            </button>
+            <div class="categories-list-item-quantity">4 <span>шт</span></div>
+            <div class="categories-list-item-container">
+              <svg width="250" height="150" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  id="curve"
+                  d="M -20,120 Q 140,40 250,120"
+                  fill="transparent"
+                  stroke="none"
+                />
+                <text>
+                  <textPath
+                    href="#curve"
+                    startOffset="50%"
+                    text-anchor="middle"
+                    class="categories-list-item-container-text"
+                  >
+                    ИЗГОТОВЛЕНИЕ НА ЗАКАЗ
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="goods">
+      <div class="container">
+        <div class="goods-top-part">
+          <div class="goods-top-part-filters">
+            <div class="goods-top-part-filters-btn">фильтры</div>
+            <div class="goods-top-part-filters-body display-none">
+              <p class="goods-top-part-filters-body-header">Цена</p>
+              <div class="goods-top-part-filters-body-price">
+                <div class="input-box">
+                  <div class="min-box">
+                    <div class="input-wrap">
+                      <span class="input-addon">от</span>
+                      <input
+                        type="text"
+                        name="min-input"
+                        class="input-field min-input"
+                      />
+                    </div>
+                  </div>
+                  <div class="max-box">
+                    <div class="input-wrap">
+                      <span class="input-addon">до</span>
+                      <input
+                        type="text"
+                        name="max-input"
+                        class="input-field max-input"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="range-slider">
+                  <input
+                    type="range"
+                    name="min-val"
+                    min="0"
+                    max="12000"
+                    class="min-val"
+                    value="3331"
+                  />
+                  <input
+                    type="range"
+                    name="max-val"
+                    min="0"
+                    max="12000"
+                    class="max-val"
+                    value="12000"
+                  />
+                  <div class="slider-track"></div>
+                  <div class="tooltip min-tooltip">3331</div>
+                  <div class="tooltip max-tooltip">12000</div>
+                </div>
+              </div>
+              <div class="goods-top-part-filters-body-checkboxes">
+                <label class="custom-checkbox">
+                  <input type="checkbox" data-color="зеленый" />
+                  <span class="checkmark"></span>
+                  <span class="checkbox-parametr">Зеленый</span>
+                  <span class="custom-checkbox-amount"> (580) </span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" data-color="синий" />
+                  <span class="checkmark"></span>
+                  <span class="checkbox-parametr">Синий</span>
+                  <span class="custom-checkbox-amount"> (580) </span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" data-color="оранжевый" />
+                  <span class="checkmark"></span>
+                  <span class="checkbox-parametr">Оранжевый</span>
+                  <span class="custom-checkbox-amount"> (580) </span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" data-color="розовый" />
+                  <span class="checkmark"></span>
+                  <span class="checkbox-parametr">Розовый</span>
+                  <span class="custom-checkbox-amount"> (580) </span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" data-color="лавандовый" />
+                  <span class="checkmark"></span>
+                  <span class="checkbox-parametr">Лавандовый</span>
+                  <span class="custom-checkbox-amount"> (580) </span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" data-color="голубой" />
+                  <span class="checkmark"></span>
+                  <span class="checkbox-parametr">Голубой</span>
+                  <span class="custom-checkbox-amount"> (580) </span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="goods-top-part-quantity">
+            <span class="goods-top-part-quantity-span">20</span>позиций в
+            категории
+          </div>
+        </div>
+        <ul class="goods-list">
+          <p id="no-results" style="display: none">No results found</p>
+        </ul>
+        <button class="goods-load-more">Загрузить еще</button>
+      </div>
+    </section>
+    <section class="decoration">
+      <div class="decoration-line"></div>
+      <div class="decoration-line-second"></div>
+    </section>
+    <section class="blog">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="blog-top-part">
+            <div class="blog-top-part-right">
+              <div class="swiper-pagination"></div>
+              <!-- буллетовая -->
+              <h2 class="blog-top-part-right-header">блог</h2>
+            </div>
+            <div class="blog-top-part-left">
+              <div class="swiper-pagination-left"></div>
+              <!-- фракционная -->
+            </div>
+          </div>
+          <div class="swiper-wrapper"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-wrapper-year">@2023</div>
+          <div class="footer-wrapper-rights">Все права защищены</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="date.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
